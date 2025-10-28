@@ -35,7 +35,7 @@ export class ProjectsComponent {
     },
     {
       name: 'Twitter Sentiment Analysis',
-      description: '',
+      description: 'This project is a Twitter Sentiment Analysis pipeline built with Python.It processes real tweets, cleans the text, converts them into machine-readable features, and applies ML models to determine their sentiment.',
       photo: 'twitter_project.jpg'
     },
     {
