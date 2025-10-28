@@ -27,9 +27,10 @@
               }
             ],
             "styles": [
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "src/styles.css"
             ],
-            "scripts": [],
+            "scripts": [ "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"],
             "server": "src/main.server.ts",
             "prerender": true,
             "ssr": {
@@ -97,5 +98,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "dd73bb2d-2a5c-4dc9-8c7e-6d26b8f7e7be"
   }
 }

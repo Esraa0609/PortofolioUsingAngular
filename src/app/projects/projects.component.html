@@ -1,0 +1,30 @@
+<div class="container">
+  <div class="row">
+    @for (proj of projects; track $index) {
+      <div class="col-4 d-flex py-3">
+        <div class="card text-center project-card w-100" (click)="openModal(proj)">
+          <img [src]="proj.photo" class="card-img-top fixed-img" alt="Project Image">
+          <div class="card-body">
+            <h5 class="card-title fw-bold">{{ proj.name }}</h5>
+          </div>
+        </div>
+      </div>
+    }
+  </div>
+  <br><br>
+</div>
+
+<div class="modal fade" id="projectModal" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">{{ selectedProject?.name }}</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body text-center">
+        <img [src]="selectedProject?.photo" class="img-fluid mb-3">
+        <p>{{ selectedProject?.description || 'No description available.' }}</p>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,30 @@
+<div class="container">
+  <div class="row">
+    @for (ex of expiriences; track $index) {
+      <div class="col-4 d-flex py-3">
+        <div class="card text-center project-card w-100" (click)="openModal(ex)">
+          <img [src]="ex.photo" class="card-img-top fixed-img" alt="Experience Image">
+          <div class="card-body">
+            <h5 class="card-title fw-bold">{{ ex.name }}</h5>
+          </div>
+        </div>
+      </div>
+    }
+  </div>
+</div>
+
+<!-- Bootstrap Modal -->
+<div class="modal fade" id="experienceModal" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">{{ selectedExperience?.name }}</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body text-center">
+        <img [src]="selectedExperience?.photo" class="img-fluid mb-3">
+        <p>{{ selectedExperience?.description || 'No description available.' }}</p>
+      </div>
+    </div>
+  </div>
+</div>

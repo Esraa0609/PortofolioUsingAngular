@@ -1,0 +1,23 @@
+.project-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.2);
+}
+
+.fixed-img {
+  height: 200px;
+  object-fit: contain;
+  padding: 10px;
+}
+
+.card {
+  cursor: pointer;
+  transition: transform .2s, box-shadow .2s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
