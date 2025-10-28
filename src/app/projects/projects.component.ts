@@ -40,7 +40,7 @@ export class ProjectsComponent {
     },
     {
       name: 'Data Visualisation using PowerBi',
-      description: 'This project is a Sales Performance Dashboard built most likely using Microsoft Power BI (or a similar BI tool). It visualizes key business metrics to help management analyze sales performance across products, regions, and time.',
+      description: 'This project is a Sales Performance Dashboard built using Microsoft Power BI. It visualizes key business metrics to help management analyze sales performance across products, regions, and time.',
       photo: 'dashboard.jpg'
     }
   ];
